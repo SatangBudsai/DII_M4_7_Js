@@ -1,18 +1,13 @@
-let n = 91;
-let check = true;
-for(i=2;i<n;i++){
-    if(n%i == 0){
-        check = false;
-        break;
+let n = 97;
+for(i=2;i<=n;i++){
+    check = true;
+    for(j=2;j<i;j++){
+        if(i%j == 0){
+            check=false;
+            break;
+        }
+    }
+    if(check == true){
+        console.log(i+" prime number");
     }
 }
-console.log(n+" Prime number ? : "+check);
-let count=2;
-while(count < n){
-    if(n%i == 0){
-        check = false;
-        break;
-    }
-    count++;
-}
-console.log(n+" Prime number ? : "+check);
