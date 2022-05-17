@@ -1,16 +1,12 @@
-let n = 5;
-let factorial = 1;
-if (n != 0){
-    for(i=n;i>0;i--){
-        factorial = factorial*i;
-        console.log(i);
+let n =10;
+before =0;
+after=1;
+if(n>0){
+    console.log(before);
+    for(i=1;i<n;i++){
+    console.log(after);
+    cal = before + after;
+    before = after;
+    after = cal;
     }
-    console.log("for = "+factorial);
-    factorial = 1;
-    while(n>0){
-        factorial = factorial*n;
-        console.log(n);
-        n--;
-    }
-    console.log("while = "+factorial);
-}else{console.log("factorial 0 = "+factorial);}
+}
