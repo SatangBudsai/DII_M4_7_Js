@@ -1,5 +1,12 @@
-let guestType = "regular"
-let guestPrefix = "Miss"
-console.log(guestPrefix + ' ' + guestType)
-
-console.log(1+"11"+true);
+let score = 79.4;
+let grade;
+if (score >= 80){
+    grade = 'A';
+}else if (score >= 75){
+    grade ='B+';
+}else if (score >= 75){
+    grade ='B';
+}else if (score >= 75){
+    grade ='C+';
+}
+console.log(grade+' '+score)
