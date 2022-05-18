@@ -8,8 +8,14 @@ function alert2() {
 let cancel = document.getElementById('cancel');
 cancel.addEventListener('click', alert2);
 
-//alert showdate ''
+//alert showdate 
 showDate.addEventListener('click', 
     function() {
     document.getElementById('emptySpace').innerText = Date();
+});
+
+//Delete alert showdate
+showDate.addEventListener('dblclick', 
+    function() {
+    document.getElementById('emptySpace').innerHTML ='';
 });
