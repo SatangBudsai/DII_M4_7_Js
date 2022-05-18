@@ -1,43 +1,37 @@
-let cmu = {
-    'name':'chiang main university',
-    'lat' : 18.8046735,
-    'long':98.9528446,
+let employee = [5];
+employee[0] = {
+    'name' : 'นาย ก นามสมมติ',
+    'age' : 68,
+    'money' : 75900,
 }
-let maya = {
-    'name':'maya',
-    'lat' : 18.8046735,
-    'long':98.9528446,
+employee[1] = {
+    'name' : 'นาย ข นามสมมติ',
+    'age' : 35,
+    'money' : 55400,
 }
-let cenfest = {
-    'name':'central chiang mai',
-    'lat' : 18.8046735,
-    'long':98.9528446,
+employee[2] = {
+    'name' : 'นาย ค นามสมมติ',
+    'age' : 51,
+    'money' : 81000,
 }
-console.log(cmu);
-console.log(cmu.name+' '+cenfest.name);
-console.log(cmu['name']===cmu.name);
-
-let place = [cmu, maya, cenfest]
-console.log(place)
-
-// collection mix array
-let place2 = [3];
-
-place2[0] = {
-    'name':'chiang main university',
-    'lat' : 18.8046735,
-    'long':98.9528446,
+employee[3] = {
+    'name' : 'นาย ง นามสมมติ',
+    'age' : 76,
+    'money' : 111000,
 }
-place2[1] = {
-    'name':'maya',
-    'lat' : 18.8046735,
-    'long':98.9528446,
+employee[4] = {
+    'name' : 'นาย จ นามสมมติ',
+    'age' : 22,
+    'money' : 20500,
 }
-place2[2] = {
-    'name':'central chiang mai',
-    'lat' : 18.8046735,
-    'long':98.9528446,
+let sum_money=0;
+for (i=0;i<employee.length;i++){
+    sum_money = sum_money+employee[i].money;
 }
-console.log(place2[0].name)
-console.log(place2[1].name)
-console.log(place2[2].name)
+console.log("sum money all employee : "+sum_money);
+let average_age=0;
+for (i=0;i<employee.length;i++){
+    average_age = average_age+employee[i].age;
+}
+average_age = average_age/employee.length;
+console.log("sum money all employee : "+average_age);
