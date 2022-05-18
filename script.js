@@ -1,5 +1,5 @@
-const newText = 'not ok';
-let allFlexItem = document.getElementsByClassName('flex-item')
-for (i = 0 ; i<allFlexItem.length ; i++){    
-    allFlexItem[i].innerHTML = newText;
+function alert1() {    
+    alert('let me see ...');
 }
+let ok = document.getElementById('ok');
+ok.addEventListener('click', alert1);
