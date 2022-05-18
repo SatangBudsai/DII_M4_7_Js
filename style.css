@@ -22,3 +22,8 @@
     color: black;
     border: 2px solid red;
 }
+#showDate {
+    background-color: rgb(102, 230, 51);
+    color: black;
+    border: 2px solid rgb(0, 170, 20);
+}
